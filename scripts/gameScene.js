@@ -32,8 +32,9 @@ export class GameScene extends Phaser.Scene
 
       
 
-        // this.bgSound = this.sound.add("bgsound");
-        // this.bgSound.play();
+        this.bgSound = this.sound.add("bgsound");
+	bgsound.loop = true;
+        this.bgSound.play();
 
 		let bg = this.add.image(getCenterX(this), getCenterY(this), `bg_${option.levelNumber + 1}`);
         bg.displayWidth = getWidth(this);
