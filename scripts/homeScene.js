@@ -9,7 +9,7 @@ export class HomeScene extends Phaser.Scene
     create(){
 
         //this.sound.play("bgsound");
-        this.sound.play("bgsoundspace");
+        this.sound.play("bgsound");
         let title = this.add.text(this.sys.canvas.width / 2, 200, `Dreamland`, {
             fontSize: "50px"
         }).setDepth(3).setOrigin(0.5);
